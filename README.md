@@ -13,3 +13,4 @@ We will not re-launch new carrots, but open source the contract which had been f
 
 ## Warning
 All of the project fork from carrot should update their contracts. The team should not give up ownership and roles prematurely, timelocker is a better substitute.
+The contracts has not been audited and any tested, please fork teams to ensure that the error does not happen again after audit.
