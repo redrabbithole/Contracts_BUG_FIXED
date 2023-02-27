@@ -1,5 +1,6 @@
 ## WTF What happened?
-The rabbit hole can be extracted in the previous code design. In the EGGS contract, the token in the chef will also be debased, too. However, the mechanism of CARROT is different, which causes the incompatibility between the contracts.
+In the previous code design, the carrots amount of rabbit hole can be withdrawn to 0, but there are still many carrots recorded in the rabbit hole. If someone continues to withdraw money, the rabbit hole will mint the missing part to the withdrawer. In the EGGS contract, the token in the chef will also be debased, too. However, the mechanism of CARROT is different, which causes the incompatibility between the contracts. It directly leads to miscalculation of rewards.
+
 Because the balance of chef is a too small amount after too many ppl withdraw 👇
 * the function `updatePool` will be called after anyone called `claim` function.
 * `pool.accRewardPerShare` will be updated to a large number bc the lpSupply (the carrot balance of chef) is small.
